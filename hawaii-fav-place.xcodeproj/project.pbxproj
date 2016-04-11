@@ -12,6 +12,12 @@
 		34959FDB1C7BC21200F411EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34959FD91C7BC21200F411EA /* Main.storyboard */; };
 		34959FDD1C7BC21200F411EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34959FDC1C7BC21200F411EA /* Assets.xcassets */; };
 		34959FE01C7BC21200F411EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34959FDE1C7BC21200F411EA /* LaunchScreen.storyboard */; };
+		34959FE81C7BC64F00F411EA /* RoundCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34959FE71C7BC64F00F411EA /* RoundCorners.swift */; };
+		34F951651C7CFE37003CBE96 /* ImgRoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F951641C7CFE37003CBE96 /* ImgRoundedCorners.swift */; };
+		34F951671C7E74E9003CBE96 /* IpadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F951661C7E74E9003CBE96 /* IpadButton.swift */; };
+		34F951691C7E894A003CBE96 /* PhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F951681C7E894A003CBE96 /* PhotosVC.swift */; };
+		34F9516B1C7E895B003CBE96 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F9516A1C7E895B003CBE96 /* AboutVC.swift */; };
+		34F9516D1C7E9936003CBE96 /* hula.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34F9516C1C7E9936003CBE96 /* hula.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		34959FDC1C7BC21200F411EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34959FDF1C7BC21200F411EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34959FE11C7BC21200F411EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34959FE71C7BC64F00F411EA /* RoundCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundCorners.swift; sourceTree = "<group>"; };
+		34F951641C7CFE37003CBE96 /* ImgRoundedCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImgRoundedCorners.swift; sourceTree = "<group>"; };
+		34F951661C7E74E9003CBE96 /* IpadButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IpadButton.swift; sourceTree = "<group>"; };
+		34F951681C7E894A003CBE96 /* PhotosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosVC.swift; sourceTree = "<group>"; };
+		34F9516A1C7E895B003CBE96 /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		34F9516C1C7E9936003CBE96 /* hula.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hula.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +66,18 @@
 		34959FD41C7BC21200F411EA /* hawaii-fav-place */ = {
 			isa = PBXGroup;
 			children = (
+				34F9516C1C7E9936003CBE96 /* hula.mp3 */,
 				34959FD51C7BC21200F411EA /* AppDelegate.swift */,
 				34959FD71C7BC21200F411EA /* ViewController.swift */,
 				34959FD91C7BC21200F411EA /* Main.storyboard */,
 				34959FDC1C7BC21200F411EA /* Assets.xcassets */,
 				34959FDE1C7BC21200F411EA /* LaunchScreen.storyboard */,
 				34959FE11C7BC21200F411EA /* Info.plist */,
+				34959FE71C7BC64F00F411EA /* RoundCorners.swift */,
+				34F951641C7CFE37003CBE96 /* ImgRoundedCorners.swift */,
+				34F951661C7E74E9003CBE96 /* IpadButton.swift */,
+				34F951681C7E894A003CBE96 /* PhotosVC.swift */,
+				34F9516A1C7E895B003CBE96 /* AboutVC.swift */,
 			);
 			path = "hawaii-fav-place";
 			sourceTree = "<group>";
@@ -96,6 +114,7 @@
 				TargetAttributes = {
 					34959FD11C7BC21200F411EA = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = A3LPYFV849;
 					};
 				};
 			};
@@ -123,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34959FE01C7BC21200F411EA /* LaunchScreen.storyboard in Resources */,
+				34F9516D1C7E9936003CBE96 /* hula.mp3 in Resources */,
 				34959FDD1C7BC21200F411EA /* Assets.xcassets in Resources */,
 				34959FDB1C7BC21200F411EA /* Main.storyboard in Resources */,
 			);
@@ -135,8 +155,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34F9516B1C7E895B003CBE96 /* AboutVC.swift in Sources */,
+				34F951651C7CFE37003CBE96 /* ImgRoundedCorners.swift in Sources */,
+				34F951691C7E894A003CBE96 /* PhotosVC.swift in Sources */,
 				34959FD81C7BC21200F411EA /* ViewController.swift in Sources */,
+				34F951671C7E74E9003CBE96 /* IpadButton.swift in Sources */,
 				34959FD61C7BC21200F411EA /* AppDelegate.swift in Sources */,
+				34959FE81C7BC64F00F411EA /* RoundCorners.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +274,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "hawaii-fav-place/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thegreatestross.hawaii-fav-place";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +288,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "hawaii-fav-place/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thegreatestross.hawaii-fav-place";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -286,6 +317,7 @@
 				34959FE61C7BC21200F411EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

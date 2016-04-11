@@ -7,18 +7,40 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
+    
+    var musicPlayer: AVAudioPlayer!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+   
+        
+        do
+        {
+            let resourcePath = NSBundle.mainBundle().pathForResource("hula", ofType: "mp3")!
+            let url = NSURL(fileURLWithPath: resourcePath)
+            
+            
+            try musicPlayer = AVAudioPlayer(contentsOfURL: url)
+            
+            musicPlayer.prepareToPlay()
+            musicPlayer.play()
+
+        }catch let err as NSError{
+            print(err.debugDescription)
+            }
+        
+
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
+   
 
 
 }
